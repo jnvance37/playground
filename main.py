@@ -13,8 +13,7 @@ def main():
         try:
             result = evaluate_expression(expression)
             print(f"Result: {result}")
-        except (ValueError, SyntaxError, NameError) as e:
-            print(f"Error: {e}")
+        except (ValueError, SyntaxError, NameError):
             raise
 
 
